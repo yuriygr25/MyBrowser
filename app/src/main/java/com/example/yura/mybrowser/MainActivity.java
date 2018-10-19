@@ -19,21 +19,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-
-    public class MyAppWebViewClient extends WebViewClient {
-        @Override
-        public boolean shouldOverrideUrlLoading(WebView view, String url) {
-            if(Uri.parse(url).getHost().length() == 0) {
-                return false;
-            }
-
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-            view.getContext().startActivity(intent);
-            return true;
-        }
-
-    }
-
     public void onClick(View view) {
 
         Intent intent= new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("http://developer.alexanderklimov.ru/android/"));

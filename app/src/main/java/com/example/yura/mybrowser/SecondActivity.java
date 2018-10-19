@@ -1,12 +1,8 @@
 package com.example.yura.mybrowser;
 
-import android.annotation.TargetApi;
-import android.content.Intent;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -45,3 +41,4 @@ public class SecondActivity extends AppCompatActivity {
     }
 
 }
+
